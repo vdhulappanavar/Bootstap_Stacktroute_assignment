@@ -37,8 +37,9 @@ footer {
    col - Layout
    -------------------------------------- */
 .main-col{
-	border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
+	background: #bdbdbd;
+	padding: 0px 0px;
+	margin: 0px 0px;
 }
 
 
@@ -66,15 +67,54 @@ ul.unstyled {
 	padding: 0;
 }
 
-.row{
+.col-layout{
     overflow: hidden; 
 }
 
-[class*="col-"]{
-    margin-bottom: -99999px;
-    padding-bottom: 99999px;
+.small-col-layout{
+    overflow: hidden; 
+}
+
+.small-col-layout [class*="col-"]{
+    margin-bottom: -999px;
+    padding-bottom: 1020px;
+}
+
+.col-layout [class*="col-"]{
+    margin-bottom: -999px;
+    padding-bottom: 999px;
+}
+
+.equal-block-col-layout{
+    overflow: hidden; 
+}
+
+.equal-block-col-layout [class*="col-"]{
+    margin-bottom: -999px;
+    padding-bottom: 1020px;
 }
 /*Using negetive */
+.side-col{
+	background: #D3D3D3;
+}
+
+.col-layout h2{
+	letter-spacing:2px;
+	font-weight:bold;
+	line-height:30px;
+}
+
+.col-layout h1{
+	letter-spacing:2px;
+	font-weight:bold;
+	line-height:55px
+}
+
+.col-layout h4{
+	letter-spacing:1.5px;
+	line-height:30px
+}
+
 
 
 /* --------------------------------------
@@ -109,6 +149,14 @@ ul.unstyled {
 }
 .green_color{
 	background:#35c793;
+}
+
+.top-row{
+	background: #D3D3D3;
+}
+
+.bottom-row{
+	background: #bdbdbd;
 }
 /* --------------------------------------
    Carousel
@@ -189,7 +237,27 @@ ul.unstyled {
 	margin-right: 5px;
 }
 
+footer {
+	background: #333;
+	color: #eee;
+	font-size: 11px;
+	padding: 20px;
+	margin: 20px 0px;
+}
 
+.footer-icons{
+	padding:2px 5px;
+	font-size:30px;
+	color:white
+}
+
+.crowd-managment{
+	width:50%;
+    background-image: url('../../images/crowd_management1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding : 0px 0px;
+}
 /* --------------------------------------
    Media Queries
    -------------------------------------- */

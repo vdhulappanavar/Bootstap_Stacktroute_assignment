@@ -6,7 +6,7 @@
 		<meta name="description" content="Learn how to code your first responsive website with the new Twitter Bootstrap 3.">
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
 	
@@ -40,27 +40,27 @@
                                 
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="#">Web Design</a>
+                                        <a href="#">Crowd Rank Table</a>
                                     </li>
                                     
                                     <li>
-                                        <a href="#">Web Development</a>
+                                        <a href="#">Reastaurunts</a>
                                     </li>
                                     
                                     <li>
-                                        <a href="#">SEO</a>
+                                        <a href="#">Less Crowded days</a>
                                     </li>
                                     
                                     <li class="divider"></li>
                                     
-                                    <li class="dropdown-header">More Services</li>
+                                    <li class="dropdown-header">My Places</li>
                                     
                                     <li>
-                                        <a href="#">Content Creation</a>
+                                        <a href="#">Rides Visited</a>
                                     </li>
                                     
                                     <li>
-                                        <a href="#">Social Media Marketing</a>
+                                        <a href="#"> Stared Rides</a>
                                     </li>
                                 </ul><!-- end dropdown-menu -->
                             </li>
@@ -111,40 +111,96 @@
                 
             </section>  
             
-            <section class="row vertical-divider">                
-                <article class="col-3 text-center foo"> <!--div2 need for defining a flex container-->
-                    <h2 style="letter-spacing:2px;font-weight:bold;line-height:30px;"><i class="fal fa-calendar" style="color:white"></i>Know the best days to visit</h2>
-                    <h4 style="letter-spacing:2px;line-height:30px;">
+            <section class=" col-layout row hidden-sm ">                
+                <article class="col-3 text-center side-col"> <!--div2 need for defining a flex container-->
+                    <h2><i class="glyphicon glyphicon-calendar"></i>best days to visit</h2>
+                    <h4>
                             The data we have collected <br>until now <br>
                             Helps us, Help you plan your <br>visit to wonderla<br>
-                            <button class="button" style="background:#673ab7;opacity:0.8"><span>See analysis </span></button>
+                            <button class="btn btn-danger"><span>See analysis </span></button>
                     </h4>
                 </article>
-                <article class="col-6 text-center main-col column one-third"> <!--this div needed to make main col div1-->
-                    <h1 style="letter-spacing:2px;font-weight:bold;line-height:55px">Make Your decision</h1>
-                    <h4 style="letter-spacing:1.5px;font-weight:bold;line-height:30px;">
+                <article class="col-6 text-center main-col"> <!--this div needed to make main col div1-->
+                    <h1>Which Ride?</h1>
+                    <h4 class="hidden-sm">
                             We Can Help Optimise your time!<br>
                             We give give you live updates about each of rides<br>
                             and about the length of the line... <br>
                             Use our analysis to Save your time <br><br>
-                            <button class="button" style="opacity:0.8"><span>Crowd Rank Table </span></button>
+                            <button class="btn btn-warning"><span>Crowd Rank Table </span></button>
                     </h4>
                 </article>
-                <article class="col-3 text-center"> <!--div3 need for defining a flex container-->
-                        <h2 style="letter-spacing:2px;font-weight:bold;line-height:30px"><i class="fal fa-calendar" style="color:white"></i>Hungry?</h2>
-                        <h4 style="letter-spacing:2px;line-height:30px;">
+                <article class="col-3 text-center side-col"> <!--div3 need for defining a flex container-->
+                        <h2><i class="fa fa-utensils"></i><span class="glyphicon glyphicon-search"></span>
+                            Hungry?</h2>
+                        <h4 class="hidden-sm">
                                 The data we have collected <br>until now <br>
                                 Helps us, Help you plan your <br>visit to wonderla<br>
-                                <button class="button" style="background:#673ab7;opacity:0.8"><span>See analysis </span></button>
+                                <button class="btn btn-danger"><span>See analysis </span></button>
                         </h4>
                 </article>
             </section>
 
+            <section class="visible-sm row small-col-layout text-center">
+                <article class="col-3 side-col">
+                        <h3><i class="glyphicon glyphicon-calendar" ></i>best days</h3>
+                        <button class="btn btn-danger"><span>See analysis </span></button>
+                </article>
+                <article class="col-6 main-col">
+                        <h2>Which Ride?</h2>
+                        <button class="btn btn-warning"><span>Crowd Rank Table </span></button>
+                </article>
+                <article class="col-3 side-col">
+                        <h3><i class="fa fa-utensils"></i><span class="glyphicon glyphicon-search"></span>Hungry?</h3>
+                        <button class="btn btn-danger"><span>See analysis </span></button>
+                </article>
+            </section>
+
+
+            <section class="row equal-block-col-layout hidden-sm" style="padding-top:10px">
+                <article class="col-6 crowd-managment">
+                   
+                </article>
+                <article class="col-6" >
+                    <article class="text-right top-row" style="padding: 0px 0px;">
+                        <h2>Crowd Managment Solutions</h2>
+                        <h3>Contact Us @ <a href="mailto:example@example.com">111exapmle@example.com</a></h3>
+                    </article>
+                    <article class="bottom-row" style="padding: 0px 0px;">
+                        <h1>Feedback:</h1> 
+                        <textarea row="10" column="6"></textarea>
+                        <button class="btn btn-default">Submit</button>
+                    </article>
+                </article>
+
+            </section>
 
             
+            <section class="row equal-block-col-layout visible-sm" style="padding-top:10px">
+                <article class="col-6 crowd-managment">
+                   
+                </article>
+                <article class="col-6" >
+                    <article class="text-right top-row" style="padding: 0px 0px;">
+                        <h4>Crowd Managment Solutions</h4>
+                        <h5>Contact Us @ <a href="mailto:example@example.com">111exapmle@example.com</a></h5>
+                    </article>
+                    <article class="bottom-row" style="padding: 0px 0px;">
+                        <h4>Feedback:</h4> 
+                        <textarea row="10" column="6"></textarea>
+                        <button class="btn btn-default">Submit</button>
+                    </article>
+                </article>
+
+            </section>
             
         </main>
 
+        
+        <footer class="row">
+            <p class="col-6">copyright &copy; to blah n blah</p>
+            <div class="col-6 text-right">Follow Us on : <i class="fa fa-instagram footer-icons"></i> <i class="fa fa-facebook-square footer-icons"></i> <i class="fa fa-google-plus-circle footer-icons"></i></div>
+        </footer>
         <script src="http://code.jquery.com/jquery.js"></script>	
         <script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>       
         <script src="bootstrap/js/bootstrap.min.js"></script>
