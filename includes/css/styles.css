@@ -9,9 +9,6 @@ Notes:	 Hand coded for Udemy.com
 
 */
 
-body{
-	padding:70px;
-}
 
 /* --------------------------------------
    Layout
@@ -36,6 +33,15 @@ footer {
 	padding: 20px;
 }
 
+/* --------------------------------------
+   col - Layout
+   -------------------------------------- */
+.main-col{
+	border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+
 
 /* --------------------------------------
    Typography
@@ -44,6 +50,7 @@ footer {
 body {
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizelegibility;
+	padding:70px;
 }
 
 .well .page-header {
@@ -58,6 +65,16 @@ ul.unstyled {
 	list-style: none;
 	padding: 0;
 }
+
+.row{
+    overflow: hidden; 
+}
+
+[class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+/*Using negetive */
 
 
 /* --------------------------------------
