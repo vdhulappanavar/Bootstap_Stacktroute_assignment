@@ -37,7 +37,7 @@ footer {
    col - Layout
    -------------------------------------- */
 .main-col{
-	background: #bdbdbd;
+	background: #e83a56;
 	padding: 0px 0px;
 	margin: 0px 0px;
 }
@@ -95,7 +95,7 @@ ul.unstyled {
 }
 /*Using negetive */
 .side-col{
-	background: #D3D3D3;
+	background: #35c793;
 }
 
 .col-layout h2{
