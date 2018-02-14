@@ -1,0 +1,315 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Brad Hussey
+Updated: August 2013
+Notes:	 Hand coded for Udemy.com
+
+*/
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+footer {
+	background: #333;
+	color: #eee;
+	font-size: 11px;
+	padding: 20px;
+}
+
+.row.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .row.no-gutter [class*='col-']:not(:first-child),
+  .row.no-gutter [class*='col-']:not(:last-child) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+/* --------------------------------------
+   col - Layout
+   -------------------------------------- */
+.main-col{
+	background: #e83a56;
+	padding: 0px 0px;
+	margin: 0px 0px;
+}
+
+
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+
+body {
+	
+	padding:50px 0px 0px 0px;
+}
+
+.well .page-header {
+	margin-top: 0;
+}
+
+.well .page-header h1 {
+	margin-top: 0;
+}
+
+ul.unstyled {
+	list-style: none;
+	padding: 0;
+}
+
+.row-eq-height {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display:         flex;
+	padding-bottom: 0px;
+	flex-wrap: wrap;
+  }
+
+
+
+.col-layout{
+    overflow: hidden; 
+}
+
+.col-layout [class*="col-"]{
+    margin-bottom: -999px;
+    padding-bottom: 999px;
+}
+
+.small-col-layout{
+    overflow: hidden; 
+}
+
+.small-col-layout [class*="col-"]{
+    margin-bottom: -999px;
+    padding-bottom: 989px;
+}
+
+
+
+.equal-block-col-layout{
+    overflow: hidden; 
+}
+
+.equal-block-col-layout [class*="col-"]{
+    margin-bottom: -999px;
+    padding-bottom: 1020px;
+}
+/*Using negetive */
+.side-col{
+	background: #35c793;
+}
+
+.col-layout h2{
+	letter-spacing:2px;
+	font-weight:bold;
+	line-height:30px;
+}
+
+.col-layout h1{
+	letter-spacing:2px;
+	font-weight:bold;
+	line-height:55px
+}
+
+.col-layout h4{
+	letter-spacing:1.5px;
+	line-height:30px
+}
+
+
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+
+#searchInput {
+	width: 200px;
+}
+
+.navbar-brand {
+	padding: 13px 15px;
+}
+
+/* --------------------------------------
+   Jumbotron
+   -------------------------------------- */
+.jumbotron{
+	background-image: url('../../images/hero_image1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover; 	
+	height:80%;
+	/*padding-bottom: 0px;*/
+	margin-bottom: 0px;
+}
+
+.hero_heading{
+	color:white;
+	border-radius:10px;
+	text-transform: capitalize;
+}
+   
+.pink_color{
+	background:#e83a56;
+}
+.green_color{
+	background:#35c793;
+}
+
+.top-row{
+	background: #D3D3D3;
+	margin-top : -20px;
+}
+
+.bottom-row{
+	background: #bdbdbd;
+	margin-top: -20px;
+	margin-bottom: -20px;
+}
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+
+
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+
+
+.well {
+	margin: 20px 0;
+}
+
+.tabbable img.thumbnail {
+	margin: 0 20px 10px 0;
+}
+
+
+
+footer {
+	background: #333;
+	color: #eee;
+	font-size: 11px;
+	padding: 20px;
+	margin: 0px 0px;
+}
+
+.footer-icons{
+	padding:2px 5px;
+	font-size:30px;
+	color:white
+}
+
+.crowd-managment{
+	width:50%;
+    background-image: url('../../images/crowd_management1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding : 0px 0px;
+}
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+@media (max-width: 768px){
+	.jumbotron{
+		height: 50%;
+		margin-bottom: -20px;
+	}
+
+	.top-row{
+		text-align: center;
+		padding: 10px;
+	}
+	.bottom-row{
+		text-align: center;
+		padding: 10px;
+	}
+}
+/* Portrait & landscape phone */
+
+
+
+/* Landscape phone to portrait tablet */
+
+/*@media (max-width: 768px) {
+	.jumbotron{
+		height:50%;
+	}
+	.bottom-row{
+		margin-right: -20px;
+		margin-left : -20px;
+		margin-left: 0px;
+	}
+
+	.top-row{
+		margin-right: -15px;
+		margin-left: -15px;
+		
+	}
+	.col-layout{
+		margin-top: -20px;
+	}
+	foo{
+		margin-left: 20px;
+	}
+}*/
+
+/*@media (max-width: 768px) {
+	
+	#myCarousel .item { height: 310px; }
+	
+	#slide1 {
+		background: url('../../images/carousel_small_01.jpg') top center no-repeat;
+	}
+	
+	#slide2 {
+		background: url('../../images/carousel_small_02.jpg') top center no-repeat;
+	}
+	
+	#slide3 {
+		background: url('../../images/carousel_small_03.jpg') top center no-repeat;
+	}
+	
+	.carousel-caption {
+		font-size: 16px;
+	}
+	
+	.carousel-caption h4 {
+		font-size: 22px;
+	}
+	
+}*/
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+	#myCarousel .item { height: 500px; }
+	
+	#slide1 {
+		background: url('../../images/carousel_large_01.jpg') top center no-repeat;
+	}
+	
+	#slide2 {
+		background: url('../../images/carousel_large_02.jpg') top center no-repeat;
+	}
+	
+	#slide3 {
+		background: url('../../images/carousel_large_03.jpg') top center no-repeat;
+	}
+
+}
+
+
+
