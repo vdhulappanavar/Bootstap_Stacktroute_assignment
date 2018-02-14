@@ -49,9 +49,8 @@ footer {
    -------------------------------------- */
 
 body {
-	-webkit-font-smoothing: antialiased;
-	text-rendering: optimizelegibility;
-	padding:70px;
+	
+	padding:50px 0px 0px 0px;
 }
 
 .well .page-header {
@@ -67,8 +66,24 @@ ul.unstyled {
 	padding: 0;
 }
 
+.row-eq-height {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display:         flex;
+	padding-bottom: 0px;
+	flex-wrap: wrap;
+  }
+
+
+
 .col-layout{
     overflow: hidden; 
+}
+
+.col-layout [class*="col-"]{
+    margin-bottom: -999px;
+    padding-bottom: 999px;
 }
 
 .small-col-layout{
@@ -77,13 +92,10 @@ ul.unstyled {
 
 .small-col-layout [class*="col-"]{
     margin-bottom: -999px;
-    padding-bottom: 1020px;
+    padding-bottom: 989px;
 }
 
-.col-layout [class*="col-"]{
-    margin-bottom: -999px;
-    padding-bottom: 999px;
-}
+
 
 .equal-block-col-layout{
     overflow: hidden; 
@@ -136,6 +148,9 @@ ul.unstyled {
 	background-image: url('../../images/hero_image1.jpg');
 	background-repeat: no-repeat;
 	background-size: cover; 	
+	height:80%;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 .hero_heading{
@@ -153,50 +168,26 @@ ul.unstyled {
 
 .top-row{
 	background: #D3D3D3;
+	margin-top : -20px;
 }
 
 .bottom-row{
 	background: #bdbdbd;
+	margin-top: -20px;
+	margin-bottom: -20px;
 }
 /* --------------------------------------
    Carousel
    -------------------------------------- */
 
-#myCarousel {
-	margin-top: 60px;
-}
 
-.carousel-caption {
-	font-size: 24px;
-}
-
-.carousel-caption h4 {
-	font-size: 32px;
-}
-
-#myCarousel .item { height: 400px; }
-
-#slide1 {
-	background: url('../../images/carousel_medium_01.jpg') top center no-repeat;
-}
-
-#slide2 {
-	background: url('../../images/carousel_medium_02.jpg') top center no-repeat;
-}
-
-#slide3 {
-	background: url('../../images/carousel_medium_03.jpg') top center no-repeat;
-}
 
 
 /* --------------------------------------
    Global Styles
    -------------------------------------- */
 
-.alert {
-	margin-top: 20px;
-	display: none;
-}
+
 
 .well {
 	margin: 20px 0;
@@ -206,43 +197,14 @@ ul.unstyled {
 	margin: 0 20px 10px 0;
 }
 
-.thumbnails {
-	margin: 20px 0;
-}
 
-.thumbnail {
-	position: relative;
-}
-
-.thumbnail h3 {
-	font-size: 16px;
-	margin: 0 0 10px;
-	line-height: 20px;
-}
-
-.thumbnail .price {
-	font-size: 22px;
-	position: absolute;
-	top: -10px;
-	right: -10px;
-	padding: 10px;
-}
-
-.thumbnail .price sup {
-	font-weight: normal;
-	font-size: 12px;
-}
-
-.thumbnail span.glyphicon {
-	margin-right: 5px;
-}
 
 footer {
 	background: #333;
 	color: #eee;
 	font-size: 11px;
 	padding: 20px;
-	margin: 20px 0px;
+	margin: 0px 0px;
 }
 
 .footer-icons{
@@ -267,6 +229,23 @@ footer {
 
 
 /* Landscape phone to portrait tablet */
+
+@media (max-width: 320px) {
+	
+	.bottom-row{
+		margin-right: -20px;
+		margin-left : -20px;
+	}
+
+	.top-row{
+		margin-right: -20px;
+		margin-left: -20px;
+	}
+	.col-layout{
+		margin-top: -20px;
+	}
+}
+
 @media (max-width: 768px) {
 	
 	#myCarousel .item { height: 310px; }
