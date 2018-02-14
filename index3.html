@@ -1,0 +1,314 @@
+<html>
+	<head>
+        <link rel="icon" type="image/gif" href="images/page_logo.png" />
+
+		<title>Find Your Way</title>
+		<meta name="description" content="Learn how to code your first responsive website with the new Twitter Bootstrap 3.">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+	
+		<link rel="stylesheet" href="includes/css/styles.css">
+
+        <script src="includes/js/modernizr-2.6.2.min.js"></script>
+        
+    </head>
+    <body>
+        <header> 
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div >
+                    
+                    <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                    <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                
+                    <a class="navbar-brand" href="/"><img width="20px"  src="images/page_logo.png" alt="Your Logo"></a>
+                    
+                    <div class="nav-collapse collapse navbar-responsive-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active home">
+                                <a href="#">Home</a>
+                            </li>
+                            
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <strong class="caret"></strong></a>
+                                
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Crowd Rank Table</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#">Reastaurunts</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#">Less Crowded days</a>
+                                    </li>
+                                    
+                                    <li class="divider"></li>
+                                    
+                                    <li class="dropdown-header">My Places</li>
+                                    
+                                    <li>
+                                        <a href="#">Rides Visited</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#"> Stared Rides</a>
+                                    </li>
+                                </ul><!-- end dropdown-menu -->
+                            </li>
+                        </ul>
+                        
+                        <form class="navbar-form pull-left">
+                            <input type="text" class="form-control" placeholder="Search this site..." id="searchInput">
+                            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                        </form><!-- end navbar-form -->
+                        
+                        <ul class="nav navbar-nav pull-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> My Account <strong class="caret"></strong></a>
+                                
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#"><span class="glyphicon glyphicon-refresh"></span> Update Profile</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="#"><span class="glyphicon glyphicon-briefcase"></span> Billing</a>
+                                    </li>
+                                    
+                                    <li class="divider"></li>
+                                    
+                                    <li>
+                                        <a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>           
+        <main >
+            <section class="row jumbotron text-center align-middle">
+                <h2 style="margin:40px 0px;border-radius:10px" class="hidden-sm"><mark class="hero_heading pink_color" >Where Do I go first?!!!</mark></h2> 
+
+                <h2 style="margin:40px 0px;" class="hidden-sm"><mark class="hero_heading green_color">is a Smart Way to Navigate</mark></h2> 
+
+                <h2 style="margin:40px 0px;"> <mark class="hero_heading pink_color">ride with the shortest line!</mark></h2> 
+                
+            </section>  
+            
+            <section class=" col-layout row ">                
+                <article class="col-sm-3 text-center side-col "> <!--div2 need for defining a flex container-->
+                    <h2><i class="glyphicon glyphicon-calendar"></i>Visit On</h2>
+                    <h4>
+                            The data we have collected <br>until now <br>
+                            Helps us, Help you plan your <br>visit to wonderla<br>
+                            <button class="btn btn-danger" data-toggle="modal" data-target="#myModal"><span>See analysis </span></button>
+                    </h4>
+                </article>
+                <article>
+                        <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog">
+                                
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title">Modal Header</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <p>Some text in the modal.</p>
+                                      
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                </article>
+                <article class="col-sm-6 text-center main-col"> <!--this div needed to make main col div1-->
+                    <h1>Which Ride?</h1>
+                    <h4 >
+                            We Can Help Optimise your time!<br>
+                            We give give you live updates about each of rides<br>
+                            and about the length of the line... <br>
+                            Use our analysis to Save your time <br><br>
+                            <button class="btn btn-warning" data-toggle="modal" data-target="#line-occupancy"><span>Crowd Rank Table </span></button>
+                    </h4>
+                </article>
+                <article class="modal fade" id="line-occupancy" role="dialog">      
+                        <div class="modal-dialog"> 
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Line Occupancy Analysis</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>Pick Ride Type:</h3>
+                                    <div class="tabbable">
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a href="#tab1" data-toggle="tab">Land Rides</a></li>
+                                            <li><a href="#tab2" data-toggle="tab">Water Rides</a></li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="tab1">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                        <th>Ride Name</th>
+                                                        <th>Line Occupancy</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>      
+                                                        <tr class="success">
+                                                            <td>Ride A</td>
+                                                            <td>10%</td>    
+                                                        </tr>
+                                                        <tr class="success">
+                                                                <td>Ride S</td>
+                                                                <td>15%</td>    
+                                                        </tr>
+                                                        <tr class="success">
+                                                                <td>Ride L</td>
+                                                                <td>15%</td>    
+                                                            </tr>
+                                                            <tr class="info">
+                                                                <td>Ride Z</td>
+                                                                <td>25%</td> 
+                                                        </tr>
+                                                        <tr class="info">
+                                                                <td>Ride P</td>
+                                                                <td>30%</td> 
+                                                        </tr>
+                                                        <tr class="warning">
+                                                            <td>Rid M</td>
+                                                            <td>55%</td>
+                                                        </tr>
+                                                        <tr class="danger">
+                                                            <td>Danger</td>
+                                                            <td>Moe</td>
+                                                        </tr>
+                                                        <tr class="active">
+                                                            <td>Ride F</td>
+                                                            <td>Out Of Service</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            
+                                            <div class="tab-pane" id="tab2">
+                                                    <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                <th>Ride Name</th>
+                                                                <th>Line Occupancy</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>      
+                                                                <tr class="success">
+                                                                    <td>Ride A</td>
+                                                                    <td>10%</td>    
+                                                                </tr>
+                                                                <tr class="success">
+                                                                        <td>Ride S</td>
+                                                                        <td>15%</td>    
+                                                                </tr>
+                                                                <tr class="success">
+                                                                        <td>Ride L</td>
+                                                                        <td>15%</td>    
+                                                                    </tr>
+                                                                    <tr class="info">
+                                                                        <td>Ride Z</td>
+                                                                        <td>25%</td> 
+                                                                </tr>
+                                                                <tr class="info">
+                                                                        <td>Ride P</td>
+                                                                        <td>30%</td> 
+                                                                </tr>
+                                                                <tr class="warning">
+                                                                    <td>Rid M</td>
+                                                                    <td>55%</td>
+                                                                </tr>
+                                                                <tr class="danger">
+                                                                    <td>Danger</td>
+                                                                    <td>Moe</td>
+                                                                </tr>
+                                                                <tr class="active">
+                                                                    <td>Ride F</td>
+                                                                    <td>Out Of Service</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                            </div>
+                                        </div>
+                                    </div>        
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>    
+                        </div>        
+                    </article>
+                <article class="col-sm-3 text-center side-col"> <!--div3 need for defining a flex container-->
+                        <h2><span class="glyphicon glyphicon-search"></span>
+                            Hungry?</h2>
+                        <h4 >
+                                The data we have collected <br>until now <br>
+                                Helps us, Help you plan your <br>visit to wonderla<br>
+                                <button class="btn btn-danger"><span>See analysis </span></button>
+                        </h4>
+                </article>
+            </section>
+
+            
+            
+
+            <section class="row equal-block-col-layout row-eq-height" >
+                <article class="col-sm-6 hidden-sm crowd-managment"></article>
+                   
+                </article>
+                <article class="col-sm-6" style="padding-left:0px;" >
+                    <article  class="text-right top-row "  >
+                        <h2>Crowd Managment Solutions</h2>
+                        <h2>About Us</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque veritatis deserunt sit omnis corporis architecto tenetur fugiat alias cum aspernatur? Labore deleniti vero corporis cum praesentium illum veritatis porro architecto!</p>
+                        
+                    </article>
+                    <article class="bottom-row">
+                        <h1>Feedback:</h1> 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur consequuntur vel quidem. Incidunt possimus at dignissimos officiis quisquam repellendus omnis quaerat voluptas. Ea tenetur repudiandae eius, dolore quis nesciunt. Quia?</p>
+                        <div style="padding:20px"><textarea row="2" column="6"></textarea>
+                        <button class="btn btn-default">Submit</button></div>
+
+                    </article>
+                </article>
+
+            </section>
+        </main>
+
+        
+        <footer class="row">
+            <p class="col-sm-6">copyright &copy; to blah n blah</p>
+            <div class="col-sm-6 text-right">Follow Us on : <i class="fa fa-instagram footer-icons"></i> <i class="fa fa-facebook-square footer-icons"></i> <i class="fa fa-google-plus-circle footer-icons"></i></div>
+        </footer>
+        <script src="http://code.jquery.com/jquery.js"></script>	
+        <script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>       
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="includes/js/script.js"></script>
+    </body>
+</html>
