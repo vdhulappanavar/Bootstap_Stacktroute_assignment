@@ -230,23 +230,30 @@ footer {
 
 /* Landscape phone to portrait tablet */
 
-@media (max-width: 320px) {
-	
+@media (max-width: 768px) {
+	.jumbotron{
+		height:50%;
+	}
 	.bottom-row{
 		margin-right: -20px;
 		margin-left : -20px;
+		margin-left: 0px;
 	}
 
 	.top-row{
-		margin-right: -20px;
-		margin-left: -20px;
+		margin-right: -15px;
+		margin-left: -15px;
+		
 	}
 	.col-layout{
 		margin-top: -20px;
 	}
+	foo{
+		margin-left: 20px;
+	}
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
 	
 	#myCarousel .item { height: 310px; }
 	
@@ -270,7 +277,7 @@ footer {
 		font-size: 22px;
 	}
 	
-}
+}*/
 
 /* Large desktop */
 @media (min-width: 1200px) {
