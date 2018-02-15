@@ -17,21 +17,12 @@ $(function() {
 		
 		$('#successAlert').slideDown();
 
-		
+		/*$("#successAlert").removeClass("in").show();
+	$("#successAlert").delay(200).addClass("in").fadeOut(2000);*/
 		
 	});
 
-	$('#feedbackform').click(function(e) {
-		$('.form-horizontal').css('visibility' , 'visible');
-	});
 	
-	$('a.pop').click(function(e) {
-		e.preventDefault();
-	});
-	
-	$('a.pop').popover();
-	
-	$('[rel="tooltip"]').tooltip();
 	
 	
 });
