@@ -1,5 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
+
+        <meta charset="UTF-8">
         <link rel="icon" type="image/gif" href="images/page_logo.png" />
 
 		<title>Find Your Way</title>
@@ -12,14 +15,12 @@
 	
 		<link rel="stylesheet" href="includes/css/styles3.css">
 
-        <script src="includes/js/modernizr-2.6.2.min.js"></script>
         
     </head>
     <body>
         <header> 
             <nav class="navbar navbar-inverse navbar-fixed-top">
-                <div >
-                    
+     
                     <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
                     <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
                         <span class="icon-bar"></span>
@@ -97,7 +98,7 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                
             </nav>
         </header>           
         <main >
@@ -119,28 +120,7 @@
                             <button class="btn btn-danger" data-toggle="modal" data-target="#myModal"><span>See analysis </span></button>
                     </h4>
                 </article>
-                <article>
-                        <div class="modal fade" id="myModal" role="dialog">
-                                <div class="modal-dialog">
-                                
-                                  <!-- Modal content-->
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                      <h4 class="modal-title">Modal Header</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                      <p>Some text in the modal.</p>
-                                      
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
-                                  </div>
-                                  
-                                </div>
-                              </div>
-                </article>
+                
                 <article class="col-sm-6 text-center main-col"> 
                     <h1>Which Ride?</h1>
                     <h4 >
@@ -196,11 +176,11 @@
                                                                 <td>30%</td> 
                                                         </tr>
                                                         <tr class="warning">
-                                                            <td>Rid M</td>
+                                                            <td>Ride M</td>
                                                             <td>55%</td>
                                                         </tr>
                                                         <tr class="danger">
-                                                            <td>Danger</td>
+                                                            <td>Ride X</td>
                                                             <td>Moe</td>
                                                         </tr>
                                                         <tr class="active">
@@ -221,31 +201,23 @@
                                                             </thead>
                                                             <tbody>      
                                                                 <tr class="success">
-                                                                    <td>Ride A</td>
+                                                                    <td>Ride Q</td>
                                                                     <td>10%</td>    
                                                                 </tr>
                                                                 <tr class="success">
-                                                                        <td>Ride S</td>
+                                                                        <td>Ride W</td>
                                                                         <td>15%</td>    
-                                                                </tr>
-                                                                <tr class="success">
-                                                                        <td>Ride L</td>
-                                                                        <td>15%</td>    
-                                                                    </tr>
-                                                                    <tr class="info">
-                                                                        <td>Ride Z</td>
-                                                                        <td>25%</td> 
-                                                                </tr>
+                                                                </tr> 
                                                                 <tr class="info">
-                                                                        <td>Ride P</td>
+                                                                        <td>Ride F</td>
                                                                         <td>30%</td> 
                                                                 </tr>
                                                                 <tr class="warning">
-                                                                    <td>Rid M</td>
+                                                                    <td>Ride H</td>
                                                                     <td>55%</td>
                                                                 </tr>
                                                                 <tr class="danger">
-                                                                    <td>Danger</td>
+                                                                    <td>Ride C</td>
                                                                     <td>Moe</td>
                                                                 </tr>
                                                                 <tr class="active">
@@ -281,31 +253,126 @@
             <section class="row no-gutter equal-block-col-layout " >
                 <article class="col-sm-6 hidden-sm crowd-managment"></article>
                    
-                </article>
+                
                 <article class="col-sm-6" style="padding-left:0px;" >
                     <article  class="text-right top-row "  >
                         <h2>Crowd Managment Solutions</h2>
                         <h2>About Us</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque veritatis deserunt sit omnis corporis architecto tenetur fugiat alias cum aspernatur? Labore deleniti vero corporis cum praesentium illum veritatis porro architecto!</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque veritatis deserunt sit omnis corporis architecto tenetur fugiat alias cum aspernatur?</p>
                         
                     </article>
                     <article class="bottom-row">
                         <h1>Feedback:</h1> 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur consequuntur vel quidem. Incidunt possimus at dignissimos officiis quisquam repellendus omnis quaerat voluptas. Ea tenetur repudiandae eius, dolore quis nesciunt. Quia?</p>
-                        <div style="padding:20px"><textarea row="2" column="6"></textarea>
-                        <button class="btn btn-default">Submit</button></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur consequuntur vel quidem. Incidunt possimus at dignissimos.</p>
+                        <div style="padding:20px">
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#feedback-form" id="#feedbackform">Give Feed Back</button></div>
 
                     </article>
                 </article>
 
             </section>
+            <article class="modal fade  " id="feedback-form" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Feedback From</h4>                            
+                        </div>
+                        <div class="modal-body">
+                                <div class="alert alert-success alert-block fade in text-center" id="successAlert">
+                                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                        
+                                        <h4>Thank You For the Feedback</h4>
+                                        
+                            </div>
+                            <form class="form-horizontal">
+                                    
+                                <div class="input-group">
+                                   <label for="email">Email Id:</label>
+                                    <span class="input-group-addon hidden-sm">@</span>
+                                    <input id="email" type="text" class="form-control" placeholder="Email:example@abc.com" aria-describedby="basic-addon1"/>
+                                    <div class="input-group-btn hidden-sm">
+                                            <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">service <span class="caret"></span></button>
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                              <li><a href="#">gmail</a></li>
+                                              <li><a href="#">yahoo</a></li>
+                                              <li><a href="#">none of the above</a></li>
+                                              
+                                            </ul>
+                                          </div><!-- /btn-group -->
+                                       
+                                            <div class="input-group-addon hidden-sm">.com</div>
+                                    
+                                </div>
+                                <span class="help-block">Please Enter Valid email id.</span>
+
+                                <div class="input-group">
+                                        <label for="email1">Email Id<sup style="color:red">*</sup>:</label>
+                                         <span class="input-group-addon">@</span>
+                                         <input id="email1" type="text" class="form-control" placeholder="Email:example@abc.com" aria-describedby="basic-addon1"/>
+                                         <div class="input-group-btn hidden-sm">
+                                                <select class="btn btn-warning">
+                                                        <option value="1" selected="selected"> Gmail</option>
+                                                        <option value="2">Yahoo</option>
+                                                        <option value="3">none</option>
+                                                        
+                                                      </select>
+                                               </div><!-- /btn-group -->
+                                            
+                                                 <div class="input-group-addon">.com</div>
+                                         
+                                     </div>
+                                     <span class="help-block">Please Enter Valid email id.</span>
+
+                                     <div class="input-group col-6" >
+                                            <label for="email">Information was Accurate About <sup style="color:red">*</sup>: </label>
+                                                                           
+                                            <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Percentage <span class="caret"></span></button>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                      <li><a href="#">90%</a></li>
+                                                      <li><a href="#">80%</a></li>
+                                                      <li><a href="#">70%</a></li>
+                                                      <li><a href="#">60%</a></li>
+                                                      <li><a href="#">50%</a></li>
+                                                      <li><a href="#">less than 40%</a></li>
+                                                    </ul>
+                                                </span>
+                                            
+                                    </div> 
+                                <div class="input-group row">
+                                        <label for="email" style="padding-right:10px">Would you recommend a friend to use this app<sup style="color:red">*</sup> : </label>
+                                                                             
+                                            <div class="radio-inline">
+                                                    <label><input type="radio" name="optradio">YES</label>
+                                            </div>
+                                            <div class="radio-inline">
+                                                   <label><input type="radio" name="optradio">NO</label>
+                                            </div>
+                                        
+                                </div>  
+                                <div class="input-group row">
+                                    <label for="comment">Leave A comment:</label>
+                                    <textarea style="border: 1px solid black"></textarea>
+                                </div>
+                               <div class="input-group row">
+                                    <button class="btn btn-success" id="alertMe">Submit</button>
+
+                               </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </main>
 
         
         <footer class="row">
             <p class="col-sm-6">copyright &copy; to blah n blah</p>
-            <div class="col-sm-6 text-right">Follow Us on : <i class="fa fa-instagram footer-icons"></i> <i class="fa fa-facebook-square footer-icons"></i> <i class="fa fa-google-plus-circle footer-icons"></i></div>
+            <section class="col-sm-6 text-right">Follow Us on : <i class="fa fa-instagram footer-icons"></i> <i class="fa fa-facebook-square footer-icons"></i> <i class="fa fa-google-plus-circle footer-icons"></i></section>
         </footer>
+        <script src="includes/js/modernizr-2.6.2.min.js"></script>
+
         <script src="http://code.jquery.com/jquery.js"></script>	
         <script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>       
         <script src="bootstrap/js/bootstrap.min.js"></script>

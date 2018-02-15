@@ -212,12 +212,17 @@ footer {
 	color:white
 }
 
+.alert{
+	display: none; 
+}
+
 .crowd-managment{
-	width:50%;
-    background-image: url('../../images/crowd_management1.jpeg');
+	
+    background-image: url('../../images/crowd.jpeg');
     background-repeat: no-repeat;
-    background-size: cover;
-    padding : 0px 0px;
+    background-size: contain;
+	padding : 0px 0px;
+	margin-bottom: 0px;
 }
 /* --------------------------------------
    Media Queries
@@ -293,7 +298,7 @@ footer {
 }*/
 
 /* Large desktop */
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
 
 	#myCarousel .item { height: 500px; }
 	
@@ -310,6 +315,6 @@ footer {
 	}
 
 }
-
+*/
 
 

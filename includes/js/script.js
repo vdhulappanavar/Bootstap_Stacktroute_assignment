@@ -16,7 +16,13 @@ $(function() {
 		e.preventDefault();
 		
 		$('#successAlert').slideDown();
+
 		
+		
+	});
+
+	$('#feedbackform').click(function(e) {
+		$('.form-horizontal').css('visibility' , 'visible');
 	});
 	
 	$('a.pop').click(function(e) {

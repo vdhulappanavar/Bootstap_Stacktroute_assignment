@@ -14,24 +14,23 @@ Notes:	 Hand coded for Udemy.com
    Layout
    -------------------------------------- */
 
-#features {
-	text-align: center;
-}
-
-#features img {
-	margin: 0 0 20px;
-}
-
-#inputMessage {
-	margin-bottom: 15px;
-}
-
-footer {
+   footer {
 	background: #333;
 	color: #eee;
 	font-size: 11px;
 	padding: 20px;
 }
+
+.row.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .row.no-gutter [class*='col-']:not(:first-child),
+  .row.no-gutter [class*='col-']:not(:last-child) {
+    padding-right: 0;
+    padding-left: 0;
+  }
 
 /* --------------------------------------
    col - Layout
@@ -149,7 +148,7 @@ ul.unstyled {
 	background-repeat: no-repeat;
 	background-size: cover; 	
 	height:80%;
-	padding-bottom: 0px;
+	/*padding-bottom: 0px;*/
 	margin-bottom: 0px;
 }
 
@@ -223,14 +222,28 @@ footer {
 /* --------------------------------------
    Media Queries
    -------------------------------------- */
+@media (max-width: 768px){
+	.jumbotron{
+		height: 50%;
+		margin-bottom: -20px;
+	}
 
+	.top-row{
+		text-align: center;
+		padding: 10px;
+	}
+	.bottom-row{
+		text-align: center;
+		padding: 10px;
+	}
+}
 /* Portrait & landscape phone */
 
 
 
 /* Landscape phone to portrait tablet */
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
 	.jumbotron{
 		height:50%;
 	}
@@ -251,7 +264,7 @@ footer {
 	foo{
 		margin-left: 20px;
 	}
-}
+}*/
 
 /*@media (max-width: 768px) {
 	
