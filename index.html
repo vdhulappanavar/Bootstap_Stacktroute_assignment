@@ -279,71 +279,62 @@
                             <h4 class="modal-title">Feedback From</h4>                            
                         </div>
                         <div class="modal-body">
-                                <div class="alert alert-success alert-block fade in text-center" id="successAlert">
-                                        <button type="button" class="close" data-dismiss="alert">&times;</button>
-                                        
-                                        <h4>Thank You For the Feedback</h4>
-                                        
+                            <div class="alert alert-success alert-block fade in text-center" id="successAlert">
+                                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                <h4>Thank You For the Feedback</h4>            
                             </div>
-                            <form class="form-horizontal">
-                                    
-                                <div class="input-group">
-                                   <label for="email">Email Id:</label>
-                                    <span class="input-group-addon hidden-sm">@</span>
+
+                            <form>
+                                <div class="form-group">
+                                  <label for="email">Email<sup style="color:red">*</sup>:</label>
+                                  <div class="input-group">
+                                    <span class="input-group-addon ">@</span>
                                     <input id="email" type="text" class="form-control" placeholder="Email:example@abc.com" aria-describedby="basic-addon1"/>
-                                    <div class="input-group-btn hidden-sm">
-                                            <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">service <span class="caret"></span></button>
+                                    <div class="input-group-btn ">
+                                        <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">service <span class="caret"></span></button>
                                             <ul class="dropdown-menu dropdown-menu-right">
-                                              <li><a href="#">gmail</a></li>
-                                              <li><a href="#">yahoo</a></li>
-                                              <li><a href="#">none of the above</a></li>
-                                              
+                                                <li><a href="#">gmail</a></li>
+                                                <li><a href="#">yahoo</a></li>
+                                                <li><a href="#">none of the above</a></li>
+                                                
                                             </ul>
-                                          </div><!-- /btn-group -->
-                                       
-                                            <div class="input-group-addon hidden-sm">.com</div>
-                                    
+                                    </div>
+                                    <div class="input-group-addon ">.com</div>
+                                  </div>
+                                  <span class="help-block">Please Enter Valid email id.</span>
                                 </div>
-                                <span class="help-block">Please Enter Valid email id.</span>
+                                
+                                
+                                <div class="form-group">
+                                    <label for="email">Information was Accurate About <sup style="color:red">*</sup>: </label>
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Percentage <span class="caret"></span></button>
+                                        <ul class="dropdown-menu dropdown-menu-right">
+                                            <li><a href="#">90%</a></li>
+                                            <li><a href="#">80%</a></li>
+                                            <li><a href="#">70%</a></li>
+                                            <li><a href="#">60%</a></li>
+                                            <li><a href="#">50%</a></li>
+                                            <li><a href="#">less than 40%</a></li>
+                                        </ul>
+                                    </span>
+                                </div>
+
+                                <div class="form-group">
+                                        <label for="email" style="padding-right:10px">Would you recommend a friend to use this app<sup style="color:red">*</sup> : </label>
+                                        <span class="input-group-btn">
+                                                <div class="radio-inline">
+                                                        <label><input type="radio" name="optradio">YES</label>
+                                                  </div>
+                                                  <div class="radio-inline">
+                                                        <label><input type="radio" name="optradio">NO</label>
+                                                  </div>
+                                        </span>
+                                    </div>
 
                                 
-
-                                     <div class="input-group col-6" >
-                                            <label for="email">Information was Accurate About <sup style="color:red">*</sup>: </label>
-                                                                           
-                                            <span class="input-group-btn">
-                                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Percentage <span class="caret"></span></button>
-                                                    <ul class="dropdown-menu dropdown-menu-right">
-                                                      <li><a href="#">90%</a></li>
-                                                      <li><a href="#">80%</a></li>
-                                                      <li><a href="#">70%</a></li>
-                                                      <li><a href="#">60%</a></li>
-                                                      <li><a href="#">50%</a></li>
-                                                      <li><a href="#">less than 40%</a></li>
-                                                    </ul>
-                                                </span>
-                                            
-                                    </div> 
-                                <div class="input-group row">
-                                        <label for="email" style="padding-right:10px">Would you recommend a friend to use this app<sup style="color:red">*</sup> : </label>
-                                                                             
-                                            <div class="radio-inline">
-                                                    <label><input type="radio" name="optradio">YES</label>
-                                            </div>
-                                            <div class="radio-inline">
-                                                   <label><input type="radio" name="optradio">NO</label>
-                                            </div>
-                                        
-                                </div>  
-                                <div class="input-group row">
-                                    <label for="comment">Leave A comment:</label>
-                                    <textarea style="border: 1px solid black"></textarea>
-                                </div>
-                               <div class="input-group row">
                                     <button class="btn btn-success" id="alertMe">Submit</button>
-
-                               </div>
-                            </form>
+                              </form>
                         </div>
                     </div>
                 </div>
